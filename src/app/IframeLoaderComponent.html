@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-iframe-loader',
+  template: `
+    <ion-content>
+      <ion-spinner *ngIf="showLoader"></ion-spinner>
+      <iframe [src]="url" (load)="onIframeLoad()"></iframe>
+    </ion-content>
+  `,
+})
+export class IframeLoaderComponent {
+  showLoader = true;
+  url = 'https://example.com';
+
+  onIframeLoad() {
+    this.showLoader = false;
+  }
+}

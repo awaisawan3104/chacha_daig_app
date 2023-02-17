@@ -1,0 +1,7 @@
+{
+  "name": "Chacha Daig",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
